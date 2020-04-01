@@ -1,0 +1,23 @@
+body {
+
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+nav {
+    background-color: rgb(92, 92, 160);
+    height: 60px;
+    width: 100%;
+}
+
+.container {
+    padding: 250px;
+}
+
+.coin-container {
+    display: flex;
+
+}
+
+.cryptocurrency {
+    justify-content: center;
+}
