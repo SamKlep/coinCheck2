@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>News</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="news.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+</head>
+
+<body>
+
+    <div class='header-container'>
+        <header>
+            <div class='logo'><span class='highlight'><a href='index.html'>Coin Check</a></span></div>
+            <nav>
+                <a href='index.html' class='mybutton'>PRICES</a>
+                <a href='news.html' class='mybutton'>NEWS</a>
+                <a href='contact.html' class='mybutton'>CONTACT</a>
+            </nav>
+    </div>
+
+    </header>
+
+    <div class="container">
+        <div class="row pt-2">
+            <div class="col-12 header text-center">
+                <h1>Cryptofeed</h1>
+                <p class="pt-0 pb-3" style="font-size:26px">Real-time cryptocurrency news</p>
+            </div>
+        </div>
+
+        <div id="empty" style="background-color: rgb(83, 33, 168); height: 50px">
+        </div>
+
+
+        <!-- ////////API FEED CONTENT RENDERED////////////// -->
+        <div id="news-wrapper">
+            <div id="news-body">
+                <a href>
+                    <h3 id="news-header"></h3>
+                </a>
+                <p id="news"></p>
+            </div>
+        </div>
+
+        <!-- ////////////////////////////////////////// -->
+
+
+
+</body>
+
+</html>

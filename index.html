@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://kit.fontawesome.com/366fb4d59a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Asap:400,700&display=swap" rel="stylesheet" />
     <link
         href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@1,300&family=Spicy+Rice&display=swap"
         rel="stylesheet">
@@ -15,44 +15,64 @@
 </head>
 
 <body>
-    <header>
-        <nav>
+    <div class='header-container'>
+        <header>
+            <div class='logo'><span class='highlight'><a href='index.html'>Coin Check</a></span></div>
+            <nav>
+                <a href='index.html' class='mybutton'>PRICES</a>
+                <a href='news.html' class='mybutton'>NEWS</a>
+                <a href='contact.html' class='mybutton'>CONTACT</a>
+            </nav>
+    </div>
 
-        </nav>
     </header>
-
     <main>
 
         <div class="container">
-            <div class="coin-container">
-            <div class='crytpocurrency'>
-                <i class="fab fa-bitcoin"></i></span><br>Bitcoin<br>BTC
-                <div id='USD'>
+            <div class="col">
+
+                <img src="images/bitcoin_logo.png">
+
+                <p>Bitcoin <br>BTC
+                </p>
+                <div id='USD' class='bottom'>
+                </div>
+            </div>
+
+
+            <div class="col">
+
+                <img src="images/bitcoincash-logo.png">
+
+                <p>Bitcoin Cash <br> BCH
+                </p>
+
+                <div id='BCH' class='bottom'>
 
                 </div>
             </div>
 
-            <div class='crytpocurrency'>
-                <i class="fab fa-connectdevelop"></i></span><br>Bitcoin<br>BTC
-                <div id='BCH'>
+
+            <div class="col">
+                <img src="images/ethereum_logo.png">
+
+                <p>Ethereum <br> ETH
+                </p>
+
+                <div id='ETH' class='bottom'>
 
                 </div>
             </div>
+            <div class="col">
+                <img src="images/litecoin-logo.png">
 
-            <div class='crytpocurrency'>
-                <i class="fab fa-viacoin"></i></span><br>Bitcoin<br>BTC
-                <div id='ETH'>
+                <p>Litecoin <br> LTC
+                </p>
 
-                </div>
-            </div>
-
-            <div class='crytpocurrency'>
-                <i class="fab fa-contao"></i></span><br>Bitcoin<br>BTC
-                <div id='LTC'>
+                <div id='LTC' class='bottom'>
 
                 </div>
             </div>
-        </div>
 
         </div>
 

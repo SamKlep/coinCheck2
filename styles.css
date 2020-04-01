@@ -1,23 +1,166 @@
-body {
+/* Global View aka Desktop View */
 
-    font-family: 'Alegreya Sans SC', sans-serif;
+body {
+  margin: 0;
+  font-family: 'Asap', sans-serif;
+  color: black;
+  background-color: rgb(235, 235, 235);
 }
 
-nav {
-    background-color: rgb(92, 92, 160);
-    height: 60px;
-    width: 100%;
+a {
+  color: white;
+  text-decoration: none;
 }
 
 .container {
-    padding: 250px;
+  min-height: 500px;
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 140px;
 }
 
-.coin-container {
-    display: flex;
-
+.header-container {
+  background-color: rgb(79, 4, 255);
+  min-height: 100px;
+  position: fixed;
+  width: 100%;
 }
 
-.cryptocurrency {
-    justify-content: center;
+header {
+  max-width: 1024px;
+  /* background-color: blueviolet; */
+  min-height: 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-container {
+  background-color: rgb(60, 60, 60);
+  min-height: 100px;
+  margin-bottom: 40px;
+}
+
+footer {
+  max-width: 1024px;
+  /* background-color: blueviolet; */
+  min-height: 100px;
+  margin: 0 auto;
+}
+
+.col {
+  width: 30%;
+  margin-bottom: 40px;
+  background-color: white;
+  align-content: center;
+}
+
+.col p {
+  font-size: 20px;
+  padding: 20px 25px;
+  line-height: 1.25rem;
+}
+
+.col p::first-line {
+  font-weight: 700;
+}
+
+.hide-desktop {
+  display: none;
+}
+
+.col img {
+  width: 40%;
+  align-content: center;
+}
+
+.mybutton {
+  padding: 10px 25px;
+  border-style: solid;
+  border-width: 1px;
+  margin-left: 20px;
+}
+
+.highlight {
+  font-weight: 600;
+  font-size: 60px;
+  color: white;
+}
+
+
+.mob-wrapper {
+  display: none;
+}
+
+.mybutton:hover {
+  color: yellow;
+  border: solid 2px;
+}
+
+/* Tablet View */
+@media (max-width: 768px) {
+  .col {
+    width: 45%;
+  }
+
+  .hide-desktop {
+    display: block;
+  }
+
+  .header-container {
+    position: relative;
+  }
+
+  .container {
+    padding-top: 40px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  nav a {
+    display: block;
+  }
+
+  .mybutton {
+    margin-left: 0;
+  }
+
+  .mob-wrapper {
+    display: block;
+    padding-right: 30px;
+  }
+
+  .logo {
+  }
+}
+
+.mob-nav {
+  display: none;
+  position: absolute;
+  padding-top: 10px;
+}
+
+.navbutton {
+  display: block;
+  background-color: coral;
+  padding: 15px 30px;
+  margin-left: -70px;
+  text-align: center;
+}
+
+/* Mobile View */
+@media (max-width: 400px) {
+  .col {
+    width: 100%;
+  }
+
+  .hide-mobile {
+    display: none;
+  }
 }
